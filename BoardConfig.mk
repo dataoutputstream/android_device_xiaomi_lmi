@@ -27,5 +27,9 @@ TARGET_KERNEL_CONFIG := vendor/lmi_defconfig
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
+# Vendor init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lmi
+TARGET_RECOVERY_DEVICE_MODULES := libinit_lmi
+
 # inherit from the proprietary version
 -include vendor/xiaomi/lmi/BoardConfigVendor.mk
