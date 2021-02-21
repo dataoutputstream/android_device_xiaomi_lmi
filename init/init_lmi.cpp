@@ -34,7 +34,7 @@
 #include "property_service.h"
 #include "vendor_init.h"
 
-using android::init::property_set;
+
 
 void property_override(char const prop[], char const value[])
 {
@@ -57,6 +57,6 @@ void property_override_dual(char const system_prop[], char const vendor_prop[],
 void vendor_load_properties()
 {
     // fingerprint
-    property_override("ro.build.description", "lmi-user 11 RKQ1.200826.002 V12.2.1.0.RJKMIXM release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys");
+    property_override("ro.build.description", "lmi-user 11 RKQ1.200826.002 V12.2.4.0.RJKMIXM release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys");
 }
