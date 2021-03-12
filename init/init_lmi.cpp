@@ -58,5 +58,5 @@ void vendor_load_properties()
 {
     // fingerprint
     property_override("ro.build.description", "lmi-user 11 RKQ1.200826.002 V12.2.4.0.RJKMIXM release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/redfin/redfin:11/RQ2A.210305.006/7119741:user/release-keys");
 }
